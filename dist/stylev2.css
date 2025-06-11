@@ -1,0 +1,113 @@
+  /**
+     * CSS By Ilhamz24_
+     * Namanya juga belajar
+     */
+    :root {
+      --primaryColor: #1a73e8;
+      --botColor: #34a853;
+      --glassBg: rgba(255, 255, 255, 0.15);
+      --border: rgba(255, 255, 255, 0.2);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+    }
+
+    .chatbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 600px;
+      margin: 20px auto;
+      height: 90vh;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .chat-messages {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      padding-bottom: 100px; 
+    }
+
+    .message {
+      margin: 10px 0;
+      max-width: 85%;
+      padding: 12px 16px;
+      border-radius: 16px;
+      line-height: 1.4;
+      word-wrap: break-word;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .user {
+      background: none;
+      color: black;
+      text-align: right;
+      align-self: flex-end;
+      margin-left: auto;
+    }
+
+    .bot {
+      color: black;
+      margin-right: auto;
+      border-bottom-left-radius: 4px;
+    }
+
+    .chat-footer {
+      position: sticky;
+      bottom: 0;
+      z-index: 10;
+      display: flex;
+      gap: 10px;
+      padding: 1rem;
+      background: var(--glassBg);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border);
+    }
+
+    #input {
+      flex: 1;
+      padding: 12px 18px;
+      border-radius: 30px;
+      background: white;
+      font-size: 1em;
+      outline: none;
+      border: 1px solid transparent;
+    }
+
+    .sendBtn {
+      width: 45px;
+      height: 45px;
+      background: var(--primaryColor);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .sendBtn:hover {
+      background: #0f5bd4;
+    }
+
+    .spinner {
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0); }
+      100% { transform: rotate(360deg); }
+    }
