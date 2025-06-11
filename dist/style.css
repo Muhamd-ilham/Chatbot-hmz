@@ -37,6 +37,12 @@ body {
   animation: fadeIn 0.3s ease;
 }
 
+.chatbox-messages {
+  max-height: 420px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
 .user {
   background: none;
   color: black;
