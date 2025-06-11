@@ -1,6 +1,6 @@
 // Bot by Ilhamz24_ //
 
-function bloggerGemini({ elementContainer, config }) {
+function chatbotGemini({ elementContainer, config }) {
   const container = document.querySelector(elementContainer);
   if (!container) return;
 
